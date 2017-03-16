@@ -254,7 +254,7 @@ function svgdefs($options=null){
     </symbol>
     <symbol id="icon-options" viewBox="0 0 35 35">
     <title>options</title>
-    <path class="icon-options-border" style="fill: rgba(0,0,0,0); fill-opacity: 0%; stroke:green; stroke-width:5" d="M0 0h35v35h-35v-35"></path>
+    <path class="icon-options-border" style="fill: rgba(0,0,0,0); fill-opacity: 0%; stroke:$burgerbars; stroke-width:5" d="M0 0h35v35h-35v-35"></path>
     <path class="icon-options-int" style="fill:$burgerbars;" d="M6 6h23v5h-23v-5"></path>
     <path class="icon-options-int" style="fill:$burgerbars;" d="M6 14h23v5h-23v-5"></path>
     <path class="icon-options-int" style="fill:$burgerbars;" d="M6 22h23v5h-23v-5"></path>
