@@ -11,6 +11,6 @@
   $(document).ready(function(ev){
     setupBurger();
     setupTunnels();
-    $("body").append("<div>width="+$(window).width()+"</div>");
+    //$("body").append("<div>width="+$(window).width()+"</div>");
   });
 })(jQuery);
