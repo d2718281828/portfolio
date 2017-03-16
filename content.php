@@ -36,6 +36,7 @@ function makelist($att){
   if (!isset($sitecontent[$att])) return "";
   return '<ul class="'.$att.'"><li>'.implode("</li>\n<li>",$sitecontent[$att]).'</li></ul>';
 }
+$base =
 $GLOBALS["sitecontent"] = [
   "public"=>false,
   "title"=>"Derek Storkey",
@@ -46,7 +47,7 @@ $GLOBALS["sitecontent"] = [
   ],
   "description"=>"A web developer, fluent in PHP, MySQL, Javascript, jQuery, CSS and HTML",
   "profile"=>[
-    "A web developer with 6 years experience, back end and front end.",
+    "A web developer with 6 years experience, back end and some front end.",
     "Industry and commercial experience.",
     "M.A. in Mathematics from Cambridge University",
   ],
@@ -66,6 +67,9 @@ $GLOBALS["sitecontent"] = [
     ["text"=>"Home",
       "url"=> "/",
     ],
+    ["text"=>"Wordpress",
+      "url"=> "/wordpress.php",
+    ],
     /*
     ["text"=>"Contact",
       "url"=> "/contact.php",
@@ -76,6 +80,8 @@ $GLOBALS["sitecontent"] = [
     ],
   ],
   "wordpress" => [
+    "title"=>"Wordpress Experience",
+    "subtitle"=>"",
     "public"=>[
       "title"=> "Some Public plugins I have worked with",
       "text" => "Here are some amongst the many hundreds of Wordpress plugins I have worked with.",
@@ -187,11 +193,13 @@ $GLOBALS["sitecontent"] = [
 
 function navbar(){
   global $sitecontent;
+  $baseurl = "/website/index@t";
+  // $baseurl = "";
   echo "<ul>";
   foreach($sitecontent["navbar"] as $navlink){
     echo "<li>";
     if (isset($navlink["url"])) {
-      $url=$navlink["url"];
+      $url=$baseurl.$navlink["url"];
       echo "<a href='$url'>".$navlink["text"]."</a>";
     } else echo $navlink["text"];
     echo "</li>";

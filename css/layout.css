@@ -40,6 +40,10 @@ div{
 .bitheading{
   font-size: 150%;
 }
+.bitsubheading{
+  font-size: 120%;
+  font-weight: bold;
+}
 .content{
 }
 .nested{
