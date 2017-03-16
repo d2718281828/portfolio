@@ -46,7 +46,7 @@ $GLOBALS["sitecontent"] = [
   ],
   "description"=>"A web developer, fluent in PHP, MySQL, Javascript, jQuery, CSS and HTML",
   "profile"=>[
-    "A web developer with 6 years experience.",
+    "A web developer with 6 years experience, back end and front end.",
     "Industry and commercial experience.",
     "M.A. in Mathematics from Cambridge University",
   ],
@@ -74,6 +74,41 @@ $GLOBALS["sitecontent"] = [
     ["text"=>"Linkedin",
       "url"=> "https://www.linkedin.com/in/derekstorkey/",
     ],
+  ],
+  "wordpress" => [
+    "public"=>[
+      "title"=> "Some Public plugins I have worked with",
+      "text" => "Here are some amongst the many hundreds of Wordpress plugins I have worked with.",
+      "list"=> [
+        "WP3 Broadcast for sharing content across a number of 'replica' sites in a multi-site network",
+        "Polylang for multiple language support",
+        "Wishlist member (extended) for a paywall",
+        "Wordpress REST v2 API which I extended to provide the functions of a 'headless CMS'",
+        "Advanced Custom Fields",
+      ],
+    ],
+    "bespoke"=>[
+      "title"=> "A selection of bespoke plugins for specific clients",
+      "list"=> [
+        "A 'Most Read' plugin which used a very lightweight script on the page to count the page access,
+        even when the page was cached. The counting server was separate from the WP server to separate out
+        the server load. There was also a sampling option for very high volume systems.",
+        "A WP Admin plugin designed to help administrators who were new to Wordpress to find where to change
+        the different parts of the site. It could embed links on the front of the site to where in the back end
+        these parts could be edited.",
+      ],
+    ],
+    "hosting"=>[
+      "title"=> "Wordpress hosting experience",
+      "list"=> [
+        "I looked after a multi-site network on <strong>WP Engine</strong>.",
+        "I worked with WP hosted on <strong>Amazon Web Services</strong>, with multiple web servers running
+        identical Wordpress systems, fronted by a load balancer, with a Amazon S3 as a CDN for media files,
+        and a large Amazon RDS, with replication, for the data. I did not set this up, however.",
+        "I worked on a number of Wordpress systems which were hosted by my employer.",
+      ],
+    ],
+
   ],
   "portfolio" => [
     [ "url" => "http://newscm.premierbet.com/en/",
