@@ -19,7 +19,7 @@ function buttonPseudo(tunnelto,tunnelthrough) {
     that.addTarget(this);
   });
   this.empty = ((this.targets.length)==0);
-  console.log("++++++++++++++tunnel setup to "+tunnelto+" through "+tunnelthrough,this.targets,this.empty);
+  //console.log("++++++++++++++tunnel setup to "+tunnelto+" through "+tunnelthrough,this.targets,this.empty);
   if (this.empty) return;
   $(tunnelthrough).click(function(ev){
     var prop = that.click(ev);
