@@ -1,0 +1,63 @@
+/* first take - but need to remove that inner scroll bar which is ugly */
+body {
+  background-color: rgb(30, 88, 66);
+}
+div{
+  margin: 0px;
+  padding: 0px;
+}
+.parallax {
+  perspective: 1px;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+  vertical-align: top;
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+.parabit {
+  width: 100%;
+  position: relative;
+  top: 10vh;
+}
+.window1 {
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.window {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.content{
+  background-color: rgb(30, 88, 66);
+  color: white;
+}
+/* Placement of thee 3 columns */
+.midbit > div {
+  display: inline-block;
+}
+.mainsection {
+  width: 60vw;
+}
+.sidebar {
+  background-color: red;
+  width: 18vw;
+  height: 100vh;
+}
+/* needed tto make it scroll */
+.mainsectionxx div{
+  position: relative;
+}

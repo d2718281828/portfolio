@@ -1,0 +1,47 @@
+/* Nav Bar */
+.navbar ul {
+    list-style-type: none;
+}
+@media (max-width: 639px){
+  .burger-button{
+    height: 10vh;
+    width: 10vh;
+    padding: 0;
+    border: 0px;
+  }
+  .burger-button svg{
+    height: 10vh;
+    width: 10vh;
+  }
+  .mobile-header{
+    height: 10vh;
+  }
+  .mobile-header-title{
+    display: inline-block;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    vertical-align: top;
+    font-size: 120%;
+  }
+  .navbar {
+    width:40vw;
+    display: none;
+    position: absolute;
+    top:10vh;
+    left: 0px;
+    z-index:30;
+  }
+  .navbar ul {
+    padding-left: 10px;
+  }
+}
+@media (min-width: 640px){
+  .navbar {
+    height:10vh;
+  }
+  .navbar ul li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}

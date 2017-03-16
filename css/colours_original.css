@@ -1,0 +1,67 @@
+/* first take - but need to remove that inner scroll bar which is ugly */
+body {
+  background-color: red;
+  font-family: sans-serif;
+}
+a{
+  color: grey;
+}
+.centreback {
+  background-image: url("../images/douglas_fir.jpeg");
+  min-height: 800px;
+  background-position: center;
+}
+.parabit{
+  background-color: rgb(30, 88, 66);
+  color: white;
+}
+.bitheading{
+  color: yellow;
+}
+.maincontentxxx{
+  background-color: rgb(30, 88, 66);
+  color: white;
+}
+.nested{
+  border: 1px solid grey;
+}
+.burger-button {
+  background-color: blue;
+}
+/* skills */
+.tagbutton{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6db3f2+0,54a3ee+14,54a3ee+14,3690f0+85,1e69de+100 */
+  background: #6db3f2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #6db3f2 0%, #54a3ee 14%, #3690f0 85%, #1e69de 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #6db3f2 0%,#54a3ee 14%,#3690f0 85%,#1e69de 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #6db3f2 0%,#54a3ee 14% 14%,#3690f0 85%,#1e69de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+}
+/* navbar */
+.navbar{
+  background-color: blue;
+  color: yellow;
+}
+.navbar li{
+  color: yellow;
+}
+.navbar li a{
+  color: white;
+}
+/* tagging */
+div.highlighted{
+  background-color: yellow;
+  border-color: green;
+}
+button.highlighted{
+  background-color: orange;
+}
+/* these dont have any effect */
+.burger-button .icon-options-border {
+  stroke: green;
+  fill:none;
+}
+.burger-button .icon-options-int {
+  stroke: green;
+  fill: orange;
+}
