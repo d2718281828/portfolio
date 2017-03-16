@@ -120,7 +120,10 @@ $GLOBALS["sitecontent"] = [
     [ "url" => "http://newscm.premierbet.com/en/",
       "desc" => "A multi-site, multi-themed, multi-lingual rollout, the challenge was to keep administration
       costs to a minimum, which was done using a Broadcast plugin, and custom themes to enable instant rollout
-      of changes to multiple sites.",
+      of changes to multiple sites.</p><p>Wordpress themes provided different branding, e.g. for
+      <a target='_blank' href='http://news.sba.co.ug/en/'>Uganda</a>,
+      <a target='_blank' href='http://news.rsbet.com/en/'>Nigeria</a> and
+      <a target='_blank' href='http://news.guineegames.com/en/'>Guinea</a>.",
       "title" => "Wordpress multisite",
       "tags"=>[
         "wp","php","git","jq","wfall","jira",
