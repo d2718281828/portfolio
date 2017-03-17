@@ -207,7 +207,7 @@ $GLOBALS["sitecontent"] = [
 function navbar(){
   global $sitecontent;
   $baseurl = "/website/index@t";
-  // $baseurl = "";
+  $baseurl = "";
   echo "<ul>";
   foreach($sitecontent["navbar"] as $navlink){
     echo "<li>";
