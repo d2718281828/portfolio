@@ -94,12 +94,22 @@ $GLOBALS["sitecontent"] = [
       ],
     ],
     "bespoke"=>[
-      "title"=> "A selection of bespoke plugins for specific clients",
+      "title"=> "A selection of bespoke plugins and themes for specific clients",
       "list"=> [
-        "A 'Most Read' plugin which used a very lightweight script on the page to count the page access,
+        "Customised child themes with branding functions which swapped featured images on each post to fit the branding
+        of the site that the post was being broadcast to",
+        "I worked with a plugin for <strong>user data capturing</strong>, which allowed WP administrators to
+        create custom registration forms for each promotion or competition, to collect the user data that they
+        needed",
+        "I worked with a plugin for <strong>user authentication</strong> which used OAuth to validate the user
+        on another server",
+        "A plugin for <strong>Google Web analytics tagging</strong> which complied with a complex corporate
+        reporting structure of about 20 fields, taking some tags from editorial input and building others in
+        a standard way",
+        "A <strong>Most Read</strong> plugin which used a very lightweight script on the page to count the page access,
         even when the page was cached. The counting server was separate from the WP server to separate out
         the server load. There was also a sampling option for very high volume systems.",
-        "A WP Admin plugin designed to help administrators who were new to Wordpress to find where to change
+        "A <strong>WP Administrator's</strong> plugin designed to help administrators who were new to Wordpress to find where to change
         the different parts of the site. It could embed links on the front of the site to where in the back end
         these parts could be edited.",
       ],
