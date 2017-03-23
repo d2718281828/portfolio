@@ -1,5 +1,4 @@
 <?php
-include("content.php");
 include("header2.php");
 global $sitecontent;
 $pix = "wordpress";

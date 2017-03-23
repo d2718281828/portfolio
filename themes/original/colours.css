@@ -7,7 +7,7 @@ a{
   color: grey;
 }
 .centreback {
-  background-image: url("../images/douglas_fir.jpeg");
+  background-image: url("images/douglas_fir.jpeg");
   min-height: 800px;
   background-position: center;
 }
