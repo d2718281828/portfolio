@@ -20,7 +20,7 @@ global $sitecontent;
        <div class="bitheading">Skills</div>
        <?php echo makelist("skills"); echo instructions(); ?>
      </div>
-     <div class="parabit portfolio tunnelise">
+     <div class="parabit portfoliosection tunnelise">
        <div class="bitheading">Portfolio</div>
        <?php foreach ($sitecontent["portfolio"] as $example) {
          if (!$example["private"]) echo portfolio($example);

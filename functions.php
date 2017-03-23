@@ -53,7 +53,7 @@ function ziggurat($content){
 if (!function_exists("doTag")){
 function doTag($short,$long){
   $m = "<strong>".$long."</strong>";
-  $m = '<div class="tagbutton" data-tagged="'.$short.'">'.$m.'</div>';
+  $m = '<div class="tagbutton" role="button" data-tagged="'.$short.'">'.$m.'</div>';
   return $m;
 }
 }

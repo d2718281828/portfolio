@@ -3,6 +3,9 @@ $GLOBALS["themelist"] = [
   "rocket" => [
     "burgerbars"=>"#aaffff",
   ],
+  "rocket_sunset" => [
+    "burgerbars"=>"#aaffff",
+  ],
   "tree" => [
     "burgerbars"=>"#ffffaa",
   ],
