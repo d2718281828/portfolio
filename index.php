@@ -15,21 +15,23 @@ global $sitecontent;
        <div class="page-subtitle"><?php echo $sitecontent["subtitle"];?></div>
        <div class="summary"><?php echo makelist("profile");?></div>
      </div>
-     <div class="parabit tunnelise">
+     <div class="content-wrapper">
+     <div class="parabit skills tunnelise">
        <div class="bitheading">Skills</div>
        <?php echo makelist("skills"); echo instructions(); ?>
      </div>
-     <div class="parabit tunnelise">
+     <div class="parabit portfolio tunnelise">
        <div class="bitheading">Portfolio</div>
        <?php foreach ($sitecontent["portfolio"] as $example) {
          if (!$example["private"]) echo portfolio($example);
        } ?>
      </div>
-     <div class="parabit tunnelise">
+     <div class="parabit personal tunnelise">
        <div class="bitheading">Personal Projects</div>
        <?php foreach ($sitecontent["portfolio"] as $example) {
          if ($example["private"]) echo portfolio($example);
        } ?>
+     </div>
      </div>
    </div>
  </div>

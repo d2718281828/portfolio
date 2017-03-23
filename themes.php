@@ -1,6 +1,9 @@
 <?php
 $GLOBALS["themelist"] = [
-  "def" => [
+  "rocket" => [
+    "burgerbars"=>"#aaffff",
+  ],
+  "tree" => [
     "burgerbars"=>"#ffffaa",
   ],
   "original"=>[
@@ -9,7 +12,7 @@ $GLOBALS["themelist"] = [
 
 
 ];
-$GLOBALS["theme"] = "def";
+$GLOBALS["theme"] = "rocket";
 if (isset($_REQUEST["theme"])){
   $th = $_REQUEST["theme"];
   if (isset($themelist[$th])) {
