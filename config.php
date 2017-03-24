@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVER["REQUEST_URI"]=="derek.storkey.uk"){
+if ($_SERVER["SERVER_NAME"]=="derek.storkey.uk"){
   define("ENVIRONMENT","LIVE");
   define("BASE_URI","");
 } else {
