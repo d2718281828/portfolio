@@ -20,8 +20,9 @@ function navbar(){
   foreach($sitecontent["navbar"] as $navlink){
     echo "<li>";
     if (isset($navlink["url"])) {
-      $url=BASE_URI.$navlink["url"];
-      echo "<a href='$url'>".$navlink["text"]."</a>";
+      //$url=BASE_URI.$navlink["url"];
+      //echo "<a href='$url'>".$navlink["text"]."</a>";
+      echo doLink($navlink["url"],$navlink["text"]);
     } else echo $navlink["text"];
     echo "</li>";
   }
@@ -48,6 +49,14 @@ function ziggurat($content){
     $m = '<div class="nested" style="transform: translateZ('.$z.'px);">'.$m.'</div>';
   }
   return '<div class="parabit content">'.$m.'</div>';
+}
+}
+if (!function_exists("doLink")){
+function doLink($url,$text){
+  global $theme;
+  $m = BASE_URI.$url."?theme=".$theme;
+  $m = "<a href='$m'>".$text."</a>";
+  return $m;
 }
 }
 if (!function_exists("doTag")){

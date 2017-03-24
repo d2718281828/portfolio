@@ -4,7 +4,7 @@ $GLOBALS["themelist"] = [
     "burgerbars"=>"#aaffff",
   ],
   "rocket_sunset" => [
-    "burgerbars"=>"#aaffff",
+    "burgerbars"=>"#e07000",
   ],
   "tree" => [
     "burgerbars"=>"#ffffaa",

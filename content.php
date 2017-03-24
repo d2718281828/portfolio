@@ -24,6 +24,7 @@ $GLOBALS["sitecontent"] = [
     doTag("lumen","Lumen")." (a subset of Laravel) 6 months experience",
     doTag("js","Javascript")." and ".doTag("jq","jQuery")." - 6 years experience",
     doTag("mysql","MySQL")." 6 years experience, including table design, indexing and  statement optimisation",
+    doTag("css","CSS")." and a little ".doTag("sass","SASS"),
     "Source control using ".doTag("git","Git")." and ".doTag("svn","Subversion"),
     doTag("aws","Amazon Web Service").": worked with AWS on a number of deployments. ",
     "Worked in ".doTag("agile","agile")." and ".doTag("wfall","waterfall")." project structures, familiar with ".doTag("jira","Jira"),
@@ -103,7 +104,7 @@ $GLOBALS["sitecontent"] = [
       <a target='_blank' href='http://news.guineegames.com/en/'>Guinea</a>.",
       "title" => "Wordpress multisite",
       "tags"=>[
-        "wp","php","git","jq","wfall","jira",
+        "wp","php","git","jq","wfall","jira","mysql",
       ],
       "private"=>false,
     ],
@@ -122,7 +123,7 @@ $GLOBALS["sitecontent"] = [
       a corporate authorisations and entitlement system. ".changed(),
       "title" => "Subscription Gated site",
       "tags"=>[
-        "wp","php","svn","aws","wfall",
+        "wp","php","svn","aws","wfall","mysql",
       ],
       "private"=>false,
     ],
@@ -131,7 +132,7 @@ $GLOBALS["sitecontent"] = [
       user authentication and entitlement, search and other specific tasks.",
       "title" => "Complex site",
       "tags"=>[
-        "wp","php","git","jira",
+        "wp","php","git","jira","mysql",
       ],
       "private"=>false,
     ],
@@ -141,7 +142,7 @@ $GLOBALS["sitecontent"] = [
       and comments which can include media items. ".changed(),
       "title" => "A compliance site",
       "tags"=>[
-        "wp","php","svn","aws","wfall",
+        "wp","php","svn","aws","wfall","mysql",
       ],
       "private"=>false,
     ],
@@ -152,7 +153,7 @@ $GLOBALS["sitecontent"] = [
       <p>The site content is all stored in a database for flexibility.",
       "title" => "Maths Tutor",
       "tags"=>[
-        "php",
+        "php","mysql",
       ],
       "private"=>true,
     ],
@@ -162,7 +163,7 @@ $GLOBALS["sitecontent"] = [
       presented on the site - the skills and the portfolio sections, which I did with a jQuery tagging system.",
       "title" => "This site",
       "tags"=>[
-        "php","js","jq",
+        "php","js","jq","sass",
       ],
       "private"=>true,
     ],

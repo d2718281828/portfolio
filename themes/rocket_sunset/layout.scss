@@ -1,0 +1,39 @@
+/* theme specific layout goes here, after the main one */
+@media (max-width: 639px){
+  .parabit{
+    width:90vw;
+    border-radius: 1vw;
+  }
+}
+@media (max-width: 959px) and (min-width: 640px){
+  .parabit{
+    width:40vw;
+    border-radius: 1vw;
+  }
+  .parabit.portfolio{
+    float:right;
+  }
+  .parabit.maincontent{
+    width:92vw;
+    margin-left: 4vw;
+  }
+}
+@media (min-width: 960px){
+  .parabit{
+    width:360px;
+    border-radius: 10px;
+    margin-left: 40px;
+  }
+  .content-wrapper{
+    position: relative;
+  }
+  .parabit.portfoliosection{
+    position: absolute;
+    top: -27px;
+    right: 15px;
+  }
+  .parabit.maincontent{
+    width:840px;
+    margin-left: 40px;
+  }
+}

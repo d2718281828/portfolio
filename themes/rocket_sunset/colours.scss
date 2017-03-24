@@ -1,0 +1,85 @@
+/*  */
+$body_back: rgb(17,4,13);
+$body_text: rgb(197,209,185);
+$linktext: orange;
+$section_back: rgb(142,78,35);
+$section_back_left: lighten($section_back,10%);
+$section_back_right: darken($section_back,10%);
+$section_text: rgb(187,199,179);
+$section_text_head: white;
+$section_hi_back: lighten($section_back,15%);
+$section_hi_border: rgb(222,110,0);
+$header_back: rgb(78,45,38);
+$tag_back: rgb(103,41,20);
+$tag_back_edge: darken($tag_back,10%);
+$tag_hi_back: rgb(71,22,18);
+$tag_hi_back_edge: lighten($tag_hi_back,10%);
+$tag_hi_text: rgb(219,212,204);
+$nav_text: orange;
+$nav_text_link: rgb(197,209,185);
+
+@mixin vertical-gradient($main,$left,$right) {
+  background: $main; /* Old browsers */
+  background: -moz-linear-gradient(top,  $left 0%, $main 14%, $main 85%, $right 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  $left 0%,$main 14%,$main 85%,$right 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  $left 0%,$main 14%, $main 85%,$right 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$main', endColorstr='$left',GradientType=0 ); /* IE6-9 */
+}
+@mixin horizontal-gradient($main,$left,$right,$size) {
+  background: $main; /* Old browsers */
+  background: -moz-linear-gradient(left,  $left 0%, $main $size, $main (100%-$size), $right 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  $left 0%,$main $size,$main (100%-$size),$right 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  $left 0%,$main $size, $main (100%-$size),$right 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$main', endColorstr='$left',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+  background-color: $body_back;
+  font-family: sans-serif;
+}
+a{
+  color: $linktext;
+}
+.centreback {
+  background-image: url("images/sunset_rocket.jpg");
+  background-repeat: repeat-y;
+}
+.parabit{
+  @include horizontal-gradient($section_back, $section_back_left,$section_back_right,3%);
+  color: $section_text;
+}
+.bitheading{
+  color: $section_text_head;
+}
+.burger-button,
+.mobile-header {
+  background-color: $header_back;
+}
+.content{
+  border-bottom: 1px solid #c0d4ff;
+}
+/* skills */
+.tagbutton{
+  @include vertical-gradient($tag_back, $tag_back_edge, $tag_back_edge);
+}
+div.tagbutton.highlighted{
+  @include vertical-gradient($tag_hi_back, $tag_hi_back_edge, $tag_hi_back_edge);
+  color: $tag_hi_text;
+}
+/* navbar */
+.navbar{
+  background-color: $header_back;
+  color: $nav_text;
+}
+.navbar li,
+.mobile-header-title{
+  color: $nav_text;
+}
+.navbar li a{
+  color: $nav_text_link;
+}
+/* tagging */
+div.portfolio.highlighted{
+  background-color: $section_hi_back;
+  border: solid 1px $section_hi_border;
+}
