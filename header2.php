@@ -25,6 +25,7 @@ include("content.php");
   <script src="./js/tunnel.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/tagging.js"></script>
+  <?php headerStuff(); ?>
   <?php if (isset($sitecontent["description"])) { ?>
     <meta name="description" content="<?php echo $sitecontent["description"]; ?>">
   <?php } ?>
@@ -33,5 +34,6 @@ include("content.php");
   <?php
   echo svgdefs($themeopts);
   ?>
+  <div id="totalback">
   <div class="maincol">
     <?php topbar(); ?>

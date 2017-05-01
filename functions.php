@@ -59,6 +59,10 @@ function doLink($url,$text){
   return $m;
 }
 }
+if (!function_exists("headerStuff")){
+function headerStuff(){
+}
+}
 if (!function_exists("doTag")){
 function doTag($short,$long){
   $m = "<strong>".$long."</strong>";
